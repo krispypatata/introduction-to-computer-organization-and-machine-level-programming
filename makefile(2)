@@ -1,0 +1,24 @@
+exer:
+	nasm -felf64 gabinete_e6.asm
+	ld gabinete_e6.o
+	gdb < input.txt
+
+example1:
+	nasm -felf64 example1.asm
+	ld -o example1 example1.o
+	gdb example1
+
+example2:
+	nasm -felf64 example2.asm
+	ld -o example2 example2.o
+	gdb example2
+
+example3:
+	nasm -felf64 example3.asm
+	ld -o example3 example3.o
+	gdb example3
+
+example4:
+	nasm -felf64 example4.asm
+	ld -o example4 example4.o
+	gdb example4

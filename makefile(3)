@@ -1,0 +1,25 @@
+exer1:
+	nasm -felf64 gabinete_e5.asm
+	ld gabinete_e5.o
+	gdb a.out <input.txt
+
+try:
+	nasm -felf64 try.asm
+	ld try.o
+	gdb a.out
+
+
+run1:
+	nasm -felf64 example1.asm
+	ld -o example1 example1.o
+
+run2:
+	nasm -felf64 example2.asm
+	ld -o example2 example2.o
+	
+run3:
+	nasm -felf64 example3.asm
+	ld -o example3 example3.o
+
+	gdb a.out <input.txt
+	
